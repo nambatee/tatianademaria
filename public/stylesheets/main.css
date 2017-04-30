@@ -1,27 +1,190 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+body {
+  background-color: #181715;
+}
 
+.header {
+  background-image: url("/img/header.png");
+  background-repeat: no-repeat;
+}
+
+.content {
+  color: #a79f92;
+  font-family: 'Coming Soon', serif;
+  text-align: center;
+}
+
+.content-header {
+  color: #f3f0eb;
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  width: inherit;
+}
+
+#navbarNav {
+  margin-top: 80px;
+  margin-left: 30px;
+}
+
+#menuButton {
+  margin-left: -20px;
+  outline-color: #e9e5dc;
+  outline-width: thin;
+}
+
+.lightedUp {
+  color: #f3f0eb;
+}
+
+nav {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5rem;
+}
+
+.nav-item {
+  margin-top: -15px;
+}
+
+.footerSocialImg {
+  width: 64px;
+  height: 64px;
+}
+
+.socials {
+  text-align: center;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+  .header {
+    background-size: 400px 466px;
+    width: 400px;
+    height: 466px;
+  }
+  #navbarNav {
+    margin-top: 100px;
+  }
+  .content-header {
+    font-size: 2.5rem;
+  }
+  .footerSocialImg {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/*Galaxy S5*/
+@media (min-width: 360px) and (max-width: 360px) {
+  .footerSocialImg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/*iPhone 5*/
+@media (min-width: 320px) and (max-width: 320px) {
+  .header {
+    background-size: 350px 408px;
+    width: 350px;
+    height: 408px;
+  }
+  .nav-item {
+    margin-top: -23px;
+  }
+  .footerSocialImg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/*iPhone 6 Plus*/
+@media (min-width: 414px) and (max-width: 414px) {
+  .header {
+    background-size: 420px 489px;
+    width: 420px;
+    height: 489px;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    background-size: 760px 885px;
+    width: 760px;
+    height: 885px;
+  }
+  .nav-item {
+    margin-top: -10px;
+  }
+  #navbarNav {
+    margin-top: 190px;
+    margin-left: 70px;
+  }
+  nav {
+    font-size: 2.5rem;
+  }
+  .content-header {
+    font-size: 3rem;
+  }
+  .content {
+    font-size: 2rem;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    background-size: 833px 970px;
+    width: 833px;
+    height: 970px;
+    background-repeat: no-repeat;
+  }
+  .nav-item {
+    margin-top: 0;
+  }
+  #navbarNav {
+    margin-top: 290px;
+    margin-left: 70px;
+  }
+  nav {
+    font-size: 2.5rem;
+  }
+  .container-fluid {
+    margin-left: 10%;
+  }
+  .content-header {
+    font-size: 3rem;
+  }
+  .content {
+    font-size: 1.5rem;
+    padding-right: 80px;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1199px) {
+  .header {
+    background-size: 833px 970px;
+    width: 833px;
+    height: 970px;
+    background-repeat: no-repeat;
+  }
+  .nav-item {
+    margin-top: 0;
+  }
+  #navbarNav {
+    margin-top: 290px;
+    margin-left: 70px;
+  }
+  nav {
+    font-size: 2.5rem;
+  }
+  .container-fluid {
+    margin-left: 20%;
+  }
+  .content {
+    padding-right: 180px;
+  }
+  .content-header {
+    font-size: 2rem;
+  }
+}
